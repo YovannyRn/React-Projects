@@ -80,11 +80,6 @@ const NewQuotation = ({ show, onClose, onCreateQuotation }) => {
     const validObjectId = (id) =>
       typeof id === "string" && id.length === 24 && /^[a-fA-F0-9]+$/.test(id);
 
-    const dummyObjectId = () =>
-      Math.floor(Math.random() * 1e16)
-        .toString(16)
-        .padStart(24, "a");
-
     const DEFAULT_OBJECT_ID = "6650e2132321312312312312";
 
     const newQuotation = {
